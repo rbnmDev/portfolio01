@@ -1,19 +1,33 @@
+/********************* AJUSTES GENERALES *********************/
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
-
 img {
     width: 100%
 }
 
-.container {
-    position: relative;
+body {
+    background-color:black;
+
 }
 
-#texto {
+a {
+    text-decoration: none;
+}
+
+/********************* CABECERA *********************/
+
+/***** Banner Index *****/
+#abovethefold {
+    height: 25vw;
+    position: relative;
+    margin: 0;
+}
+
+#textocabecera {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,10 +35,216 @@ img {
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-weight: bolder;
     color: #fff;
+    padding: 3%;
+}
+
+#abovethefold H2 {
+    font-size: 10vw;
+}
+@media only screen and (min-width: 768px){
+#abovethefold H2 {
+    font-size: 6vw;
+    }
+    }
+
+#abovethefold H1 {
+    font-size: 6vw;
+}
+@media only screen and (min-width: 768px){
+    #abovethefold H1 {
+        font-size: 3.5vw;
+    }
+    }
+
+
+.mainheader {
+    position: sticky;
+    top: 0;
+    background-color:black;
+    margin-top: 0px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid #fff;
+    border-top: 5px solid #fff;
+    z-index: 50;
+}
+@media only screen and (min-width: 768px){
+    .mainheader {
+        flex-direction: row;
+    }
+    }
+
+
+
+
+/***** Menú de navegación *****/
+.mainheader ul li {
+    padding: 10px 3%;
+    text-align: center;
+}
+@media only screen and (min-width: 768px){
+    .mainheader ul li {
+        text-align:left;
+    }
+    }
+.mainheader ul li a {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25em;
+}
+@media only screen and (min-width: 768px){
+    .mainheader ul li a {
+        display: inline-block;
+    }
+    }
+
+
+
+.mainheader ul li a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-style: italic;}
+
+/*.mainheader ul li a:active  {
+???????????
+}*/
+
+
+
+/********************* CONTENIDO *********************/
+#presentacion {
+    font-size: 25px;
+    color: #fff;
+    padding: 3%;
+    margin-top: 50px;
+}
+
+#presentacion h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+#presentacion p{
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+
+/***** Cajas banners *****/
+
+#secciones{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+/* BIO */
+#containerbio {
+    position: relative;
+    width: 100;
+    display: inline-block;
+    border: 5px solid #fff;
+    margin: 10px auto;
+}
+
+#textoscajasbio {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    bottom: 3%;
+}
+
+#textoscajasbio a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* PORTFOLIO */
+#containerportfolio {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    border: 5px solid #fff;
+    margin: 10px auto;
+}
+
+#textoscajasportfolio {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    bottom: 3%;
+}
+
+#textoscajasportfolio a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+/* CONTACTO */
+#containercontacto {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    border: 5px solid #fff;
+    margin: 10px auto;
+
+}
+
+#textoscajascontacto {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    bottom: 3%;
+}
+
+#textoscajascontacto a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-style: italic;}
+
+
+
+
+
+
+
+
+footer {
+    height: 50px;
+    background-color: black;
+    padding: 3%;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: 26;
+    font-weight: 500;
 }
