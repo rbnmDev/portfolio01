@@ -11,7 +11,6 @@ img {
 
 body {
     background-color:black;
-
 }
 
 a {
@@ -26,7 +25,12 @@ a {
     position: relative;
     margin: 0;
 }
-
+@media only screen and (min-width: 768px){
+    #abovethefold {
+        height: 50vh;
+        }
+        }
+        
 #textocabecera {
     position: absolute;
     top: 0;
@@ -47,7 +51,7 @@ a {
 }
 @media only screen and (min-width: 768px){
 #abovethefold H2 {
-    font-size: 6vw;
+    font-size: 5rem;
     }
     }
 
@@ -56,10 +60,11 @@ a {
 }
 @media only screen and (min-width: 768px){
     #abovethefold H1 {
-        font-size: 3.5vw;
+        font-size: 3rem;
     }
     }
 
+/***** Menú de navegación *****/
 
 .mainheader {
     position: sticky;
@@ -76,37 +81,29 @@ a {
 }
 @media only screen and (min-width: 768px){
     .mainheader {
-        flex-direction: row;
+        align-items: flex-start;
+        padding: 15px 2%;
     }
     }
 
-
-
-
-/***** Menú de navegación *****/
 .mainheader ul li {
     padding: 10px 3%;
+    display: block;
     text-align: center;
 }
 @media only screen and (min-width: 768px){
     .mainheader ul li {
-        text-align:left;
+        display: inline-block;
+        text-align: left;
     }
     }
+
 .mainheader ul li a {
-    display: block;
     list-style-type: none;
     text-decoration: none;
     color: #ffffff;
     font-size: 1.25em;
 }
-@media only screen and (min-width: 768px){
-    .mainheader ul li a {
-        display: inline-block;
-    }
-    }
-
-
 
 .mainheader ul li a:hover {
     color: rgb(255, 255, 255);
@@ -143,19 +140,32 @@ a {
 
 #secciones{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 50px;
-}
+    gap: 10px;
 
+}
 
 /* BIO */
 #containerbio {
     position: relative;
-    width: 100;
+    width: 100%;
     display: inline-block;
     border: 5px solid #fff;
     margin: 10px auto;
 }
+@media only screen and (min-width: 768px){
+    #containerbio {
+    width: 48%;
+    }
+    }
+@media only screen and (min-width: 1200px){
+    #containerbio {
+    width: 32%;
+    }
+    }
+
 
 #textoscajasbio {
     position: absolute;
@@ -164,7 +174,6 @@ a {
     right: 3%;
     bottom: 3%;
 }
-
 #textoscajasbio a:hover {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -179,6 +188,17 @@ a {
     border: 5px solid #fff;
     margin: 10px auto;
 }
+@media only screen and (min-width: 768px){
+    #containerportfolio {
+        width: 48%;
+    }
+    }
+@media only screen and (min-width: 1200px){
+    #containerportfolio {
+        width: 32%;
+    }
+    }
+
 
 #textoscajasportfolio {
     position: absolute;
@@ -187,7 +207,6 @@ a {
     right: 3%;
     bottom: 3%;
 }
-
 #textoscajasportfolio a:hover {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -204,7 +223,16 @@ a {
     margin: 10px auto;
 
 }
-
+@media only screen and (min-width: 768px){
+    #containercontacto {
+        width: 48%;
+    }
+    }
+@media only screen and (min-width: 1200px){
+    #containercontacto {
+        width: 32%;
+    }
+    }
 #textoscajascontacto {
     position: absolute;
     top: 3%;
@@ -212,7 +240,6 @@ a {
     right: 3%;
     bottom: 3%;
 }
-
 #textoscajascontacto a:hover {
     color: rgb(255, 255, 255);
     font-weight: 500;
