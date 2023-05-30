@@ -17,19 +17,24 @@ a {
     text-decoration: none;
 }
 
+
+
+
 /********************* CABECERA *********************/
 
-/***** Banner Index *****/
+
+/***** Banner *****/
+
 #abovethefold {
-    height: 25vw;
+    height: 30vw;
     position: relative;
     margin: 0;
 }
 @media only screen and (min-width: 768px){
     #abovethefold {
-        height: 50vh;
+        height: 25vh;
         }
-        }
+    }
         
 #textocabecera {
     position: absolute;
@@ -48,12 +53,17 @@ a {
 
 #abovethefold H2 {
     font-size: 10vw;
+    color: #fff;
+}
+#abovethefold H2:hover {
+    font-style: italic;
+    color: #ffd900;
 }
 @media only screen and (min-width: 768px){
-#abovethefold H2 {
-    font-size: 5rem;
+    #abovethefold H2 {
+        font-size: 5rem;
     }
-    }
+}
 
 #abovethefold H1 {
     font-size: 6vw;
@@ -62,7 +72,7 @@ a {
     #abovethefold H1 {
         font-size: 3rem;
     }
-    }
+}
 
 /***** Menú de navegación *****/
 
@@ -72,19 +82,21 @@ a {
     background-color:black;
     margin-top: 0px;
     padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-bottom: 5px solid #fff;
     border-top: 5px solid #fff;
     z-index: 50;
 }
+
+.mainheader ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media only screen and (min-width: 768px){
-    .mainheader {
-        align-items: flex-start;
-        padding: 15px 2%;
+    .mainheader ul {
+        flex-flow: row;
     }
-    }
+}
 
 .mainheader ul li {
     padding: 10px 3%;
@@ -96,19 +108,26 @@ a {
         display: inline-block;
         text-align: left;
     }
-    }
+}
 
 .mainheader ul li a {
     list-style-type: none;
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.2em;
+}
+@media only screen and (min-width: 768px){
+    .mainheader ul li {
+        font-size: 1.5em;
+    }
 }
 
+
 .mainheader ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 255, 247);
     font-weight: 500;
     font-style: italic;}
+
 
 /*.mainheader ul li a:active  {
 ???????????
@@ -117,55 +136,107 @@ a {
 
 
 /********************* CONTENIDO *********************/
+
 #presentacion {
+    padding-top: 250px;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+#textopresentacion p{
     font-size: 25px;
     color: #fff;
-    padding: 3%;
-    margin-top: 50px;
+    line-height: 1.6em;
+}
+@media only screen and (min-width: 768px){
+    #textopresentacion p {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #textopresentacion p {
+        width: 33%;
+    }
 }
 
-#presentacion h3{
-    font-size: 3rem;
-    color: #fff;
+#servicios h5 {
+    margin-bottom: 100px;
 }
 
-#presentacion p{
-    font-size: 26px;
-    color: #fff;
-    line-height: 1.5em;
+@media only screen and (min-width: 768px){
+    #servicios h5 {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #servicios h5 {
+        width: 33%;
+    }
 }
 
 
-/***** Cajas banners *****/
+
+/************** Cajas banners **************/
 
 #secciones{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 50px;
-    gap: 10px;
-
+    margin-top: 200px;
+    gap: 15px
+}
+#presentacion p{
+    font-size: 25px;
+    color: #fff;
+}
+#presentacion h3{
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 10px;
+}
+#presentacion h4{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#presentacion h5{
+    font-size: 2.25rem;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 5;
+}
+#presentacion h6{
+    font-size: 1.85rem;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
-/* BIO */
+
+
+
+
+
+/******* Caja BIO *******/
+
 #containerbio {
     position: relative;
     width: 100%;
     display: inline-block;
     border: 5px solid #fff;
-    margin: 10px auto;
 }
 @media only screen and (min-width: 768px){
     #containerbio {
-    width: 48%;
+        width: calc(50% - 15px);
     }
-    }
+}
 @media only screen and (min-width: 1200px){
     #containerbio {
-    width: 32%;
+        width: calc(33% - 15px);
     }
-    }
-
+}
 
 #textoscajasbio {
     position: absolute;
@@ -180,26 +251,25 @@ a {
     font-style: italic;
 }
 
-/* PORTFOLIO */
+
+/******* Caja PORTFOLIO *******/
+
 #containerportfolio {
     position: relative;
     width: 100%;
     display: inline-block;
     border: 5px solid #fff;
-    margin: 10px auto;
 }
 @media only screen and (min-width: 768px){
     #containerportfolio {
-        width: 48%;
+        width: calc(50% - 15px);
     }
-    }
+}
 @media only screen and (min-width: 1200px){
     #containerportfolio {
-        width: 32%;
+        width: calc(33% - 15px);
     }
-    }
-
-
+}
 #textoscajasportfolio {
     position: absolute;
     top: 3%;
@@ -214,25 +284,24 @@ a {
 }
 
 
-/* CONTACTO */
+/******* Caja CONTACTO *******/
+
 #containercontacto {
     position: relative;
     width: 100%;
     display: inline-block;
     border: 5px solid #fff;
-    margin: 10px auto;
-
 }
 @media only screen and (min-width: 768px){
     #containercontacto {
-        width: 48%;
+        width: calc(50% - 15px);
     }
-    }
+}
 @media only screen and (min-width: 1200px){
     #containercontacto {
-        width: 32%;
+        width: calc(33% - 15px);
     }
-    }
+}
 #textoscajascontacto {
     position: absolute;
     top: 3%;
@@ -252,26 +321,196 @@ a {
 
 
 
-a:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-style: italic;}
 
 
 
 
 
+/*********************************** Biografia ***********************************/
+
+#curriculum {
+    padding: 3%;
+    padding-bottom: 150px;
+}
+
+#mypic {
+    width: 300px;
+    padding: 15px 0px;
+}
+
+#portfolio, #curriculum h3{
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 10px;
+}
+#portfolio, #curriculum h4{
+    font-size: 3.25rem;
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+#portfolio, #curriculum h5{
+    font-size: 2.25rem;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 5;
+}
+#portfolio, #curriculum h6{
+    font-size: 1.85rem;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#curriculum a:hover {
+    color: rgb(249, 169, 255);
+    font-style: italic;
+}
+
+
+
+
+/*********************************** Portfolio ***********************************/
+
+#downloadportfolio {
+    padding: 20px;
+}
+
+#portfolio {
+    padding: 3%;
+}
+.portfoliocajas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+.diapos {
+    width: 100%;    
+}
+@media only screen and (min-width: 1200px){
+    .diapos {
+        width: calc(50% - 10px);
+    }
+}
+#nomproyecto {
+    font-size: 3rem;
+}
+
+.proyectos, p {
+    padding-bottom: 15px;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+
+
+
+
+/*********************************** Contacto ***********************************/
+
+main {
+    padding: 3%;
+}
+
+form {
+    padding: 50px 0;
+}
+
+.entrada {
+    margin: 30px 0;
+}
+
+.formulario .labels {
+    font-size: 26px;
+    color: #fff;
+}
+
+.inputs, input#fname, select#worktipe, textarea, #emailin, #tlf {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    color: #000;
+    border-radius: 0;
+}
+
+#worktipe option{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #999;
+}
+
+.inputs, input#fname, #emailin, #tlf {
+    height: 40px;
+}
+@media only screen and (min-width: 768px){
+    .inputs, input#fname, select#worktipe, textarea, #emailin, #tlf {
+        width: 50%;
+}
+}
+@media only screen and (min-width: 1200px){
+    .inputs, input#fname, select#worktipe, textarea, #emailin, #tlf {
+        width: 33%;
+}
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+#boton{
+    all: unset;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    color: #000000;
+    border:  2px solid #fff;
+    padding: 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************** FOOTER ***********************************/
 
 
 
 footer {
-    height: 50px;
     background-color: black;
-    padding: 3%;
+    padding: 20px 3%;
 }
 
 footer p{
     color: #ffffff;
-    font-size: 26;
+    font-size: 25;
     font-weight: 500;
 }
+
+
+/*********************************** FOOTER ***********************************/

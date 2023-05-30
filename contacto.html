@@ -9,15 +9,19 @@
     <meta name="description" content="Proyecto Bootcamp portfolio - Pégame un toque para trabajar juntos">
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'>
-    <style>
-    body {
-        font-family: 'Instrument Sans';font-size: 22px;
-    }
-    </style>
-
+    <style>body {font-family: 'Instrument Sans';font-size: 22px;}</style>
 </head>
 
+
+
 <body>
+
+    <div id="abovethefold">
+        <div id="textocabecera">
+            <a href="index.html"><h2>Rubén Moreno</h2></a>
+            <h1>Diseño gráfico // Diseño web</h1>
+        </div>
+    </div>
 
     <header class="mainheader">
         <nav>
@@ -30,7 +34,70 @@
         </nav>
     </header>
 
+    <main>
+        <form class="formulario">
+
+            <!--  <form action="enviar_datos.php" method="POST"></form>    -->
+
+            <div class="entrada">
+                <label class="labels" id="nombre" for="name">Nombre</label>
+                <input class="inputs" type="text" id="name" name="name" required>
+            </div>
+
+            <div class="entrada">
+                <label class="labels" for="emailin">Dirección de email</label>
+                <input type="emailin" id="emailin" pattern=".+@.+.com" required>
+            </div>
+
+            <div class="entrada">
+                <label class="labels" for="tlf">Teléfono</label>
+                <input type="tel" id="tlf" pattern="!nan" required>
+            </div>
+            
+            <div class="entrada">
+                <label class="labels" for="worktipe">Tipo de trabajo</label>
+                <select id="worktipe" name="worktipe" size="5" multiple required>
+                    <option value="branding">Marca / logotipo</option>
+                    <option value="lookfeel">Look & Feel</option>
+                    <option value="foto">Fotografía</option>
+                    <option value="audiovisual">Audiovisual</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="entrada">
+                <label class="labels" for="comentario">Comentario adicional</label>
+                <textarea id="comentario" name="comentario" rows="10" cols="30"></textarea>
+            </div>
+
+            <div class="entrada">
+                <input id="boton" type="submit" value="Enviar">
+            </div>
+        </form>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
 
+<footer>
+    <p>Rubén Moreno - 2023</p>
+</footer>
+
+</html>
