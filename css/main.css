@@ -1,4 +1,24 @@
+
+
+
+
+
+
+
+
+
+/* CON ESTE MÉTODO NO COJE LAS TIPOGRFÍAS. ¿ME ESTOY DEJANDO ALGO OLVIDADO? */
+
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fredoka:wght@300&display=swap');
+
+
+
+
+
+
+
+
+
 
 /********************* AJUSTES GENERALES *********************/
 * {
@@ -141,15 +161,15 @@ a {
 
 /********************* CONTENIDO *********************/
 
-#presentacion {
+#presentacion { /*NO HAY MANERA DE QUE ACEPTE LA IMAGEN DE FONDO. ME PASA SIEMPRE*/
+    background-image: url("assets/img/Background-manos-rojo-azul.jpg");
+    background-size: cover;
+    background-position: center;
     padding-top: 250px;
     padding-right: 3%;
     padding-left: 3%;
     padding-bottom: 3%;
-    background-image: url("assets/img/Background-manos-rojo-azul.jpg");
-    background-size: cover;
-    background-position: center;
-    
+
 }
 #servicios h5 {
     margin-bottom: 100px;
