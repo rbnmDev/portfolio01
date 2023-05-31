@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fredoka:wght@300&display=swap');
+
 /********************* AJUSTES GENERALES *********************/
 * {
     box-sizing: border-box;
@@ -11,6 +13,7 @@ img {
 
 body {
     background-color:black;
+
 }
 
 a {
@@ -51,6 +54,9 @@ a {
     padding: 3%;
 }
 
+#abovethefold H1 {
+    font-size: 6vw;
+}
 #abovethefold H2 {
     font-size: 10vw;
     color: #fff;
@@ -59,20 +65,18 @@ a {
     font-style: italic;
     color: #ffd900;
 }
+
 @media only screen and (min-width: 768px){
     #abovethefold H2 {
         font-size: 5rem;
     }
-}
-
-#abovethefold H1 {
-    font-size: 6vw;
-}
-@media only screen and (min-width: 768px){
     #abovethefold H1 {
         font-size: 3rem;
     }
 }
+
+
+
 
 /***** Menú de navegación *****/
 
@@ -142,8 +146,14 @@ a {
     padding-right: 3%;
     padding-left: 3%;
     padding-bottom: 3%;
+    background-image: url("assets/img/Background-manos-rojo-azul.jpg");
+    background-size: cover;
+    background-position: center;
+    
 }
-
+#servicios h5 {
+    margin-bottom: 100px;
+}
 #textopresentacion p{
     font-size: 25px;
     color: #fff;
@@ -153,27 +163,23 @@ a {
     #textopresentacion p {
         width: 50%;
     }
-}
-@media only screen and (min-width: 1200px){
-    #textopresentacion p {
-        width: 33%;
-    }
-}
-
-#servicios h5 {
-    margin-bottom: 100px;
-}
-
-@media only screen and (min-width: 768px){
     #servicios h5 {
         width: 50%;
     }
 }
 @media only screen and (min-width: 1200px){
+    #textopresentacion p {
+        width: 33%;
+    }
     #servicios h5 {
         width: 33%;
     }
 }
+
+
+
+
+
 
 
 
