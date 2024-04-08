@@ -12,15 +12,66 @@ img {
     width: 100%
 }
 
+:root {
+    --text-hover: #858585;
+}
+
 body {
     background-color: black;
     font-family: Instrument Sans;
 
 }
 
+
+p {
+    color: #fff;
+    font-size: 1.33rem;
+    line-height: 1.5em;
+    font-weight: lighter;
+}
+
 a {
     text-decoration: none;
 }
+
+H1 {
+    font-size: 3rem;
+}
+
+H2 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 65px;
+    padding-bottom: 10px;
+}
+
+h5 {
+    display: block;
+    font-size: 2.25rem;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+h6 {
+    font-size: 1.85rem;
+    color: #fff;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+
 
 
 /********************* CABECERA *********************/
@@ -28,19 +79,10 @@ a {
 /***** Banner *****/
 
 #abovethefold {
-    height: 30vw;
-    position: relative;
     margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
-    #abovethefold {
-        height: 25vh;
-    }
-}
-
 #textocabecera {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -51,24 +93,15 @@ a {
     align-items: flex-start;
     font-weight: bolder;
     color: #fff;
-    padding: 3%;
+    padding: 15px;
 }
 
-#abovethefold H1 {
-    font-size: 6vw;
-}
-
-#abovethefold H2 {
-    font-size: 10vw;
-    color: #fff;
-}
 
 #abovethefold H2:hover {
-    font-style: italic;
-    color: #ffd900;
+    color: var(--text-hover);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     #abovethefold H2 {
         font-size: 5rem;
     }
@@ -87,8 +120,8 @@ a {
     background-color: black;
     margin-top: 0px;
     padding: 15px 0;
-    border-bottom: 5px solid #fff;
-    border-top: 5px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
     z-index: 50;
 }
 
@@ -105,7 +138,7 @@ a {
 }
 
 .mainheader ul li {
-    padding: 10px 3%;
+    padding: 10px 15px;
     display: block;
     text-align: center;
 }
@@ -132,38 +165,34 @@ a {
 
 
 .mainheader ul li a:hover {
-    color: rgb(0, 255, 247);
+    color: var(--text-hover);
     font-weight: 500;
-    font-style: italic;
 }
 
 
 /********************* CONTENIDO *********************/
 
 #presentacion {
-    /*NO HAY MANERA DE QUE ACEPTE LA IMAGEN DE FONDO. ME PASA SIEMPRE*/
-
     background-size: cover;
     background-position: center;
-    padding-top: 100px;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-bottom: 3%;
+    padding: 30px 15px 30px 15px;
 }
 
 #servicios h5 {
     margin-bottom: 100px;
 }
 
-#textopresentacion p {
-    font-size: 25px;
-    color: #fff;
-    line-height: 1.6em;
+#textopresentacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 15px
 }
 
 @media only screen and (min-width: 768px) {
     #textopresentacion p {
-        width: 50%;
+        width: calc(50% - 15px);
     }
 
     #servicios h5 {
@@ -188,50 +217,24 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 150px;
     gap: 15px
 }
-
-#presentacion p {
-    font-size: 25px;
-    color: #fff;
-}
-
-#presentacion h3 {
-    font-size: 3rem;
-    color: #fff;
-    padding-bottom: 10px;
-}
-
-#presentacion h4 {
-    font-size: 3rem;
-    color: #fff;
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-
-#presentacion h5 {
-    font-size: 2.25rem;
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 5;
-}
-
-#presentacion h6 {
-    font-size: 1.85rem;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
 
 /******* Caja BIO *******/
 
 #containerbio {
     position: relative;
     width: 100%;
+    height: 200px;
     display: inline-block;
-    border: 5px solid #fff;
+    border: 2px solid #fff;
+    transition: background-color 0.3s, border-color 0.1s;
+}
+
+#containerbio:hover {
+    background-color: var(--text-hover);
+    border: 2px solid var(--text-hover);
 }
 
 @media only screen and (min-width: 768px) {
@@ -248,26 +251,33 @@ a {
 
 #textoscajasbio {
     position: absolute;
-    top: 3%;
-    left: 3%;
-    right: 3%;
-    bottom: 3%;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
 }
 
-#textoscajasbio a:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-style: italic;
-}
+
 
 
 /******* Caja PORTFOLIO *******/
 
+#textointroducccion {
+    width: 50%;
+}
+
 #containerportfolio {
     position: relative;
     width: 100%;
+    height: 200px;
     display: inline-block;
-    border: 5px solid #fff;
+    border: 2px solid #fff;
+    transition: background-color 0.3s, border-color 0.1s;
+}
+
+#containerportfolio:hover {
+    background-color: var(--text-hover);
+    border: 2px solid var(--text-hover);
 }
 
 @media only screen and (min-width: 768px) {
@@ -290,20 +300,21 @@ a {
     bottom: 3%;
 }
 
-#textoscajasportfolio a:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-style: italic;
-}
-
 
 /******* Caja CONTACTO *******/
 
 #containercontacto {
     position: relative;
     width: 100%;
+    height: 200px;
     display: inline-block;
-    border: 5px solid #fff;
+    border: 2px solid #fff;
+    transition: background-color 0.3s, border-color 0.1s;
+}
+
+#containercontacto:hover {
+    background-color: var(--text-hover);
+    border: 2px solid var(--text-hover);
 }
 
 @media only screen and (min-width: 768px) {
@@ -326,17 +337,12 @@ a {
     bottom: 3%;
 }
 
-#textoscajascontacto a:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-style: italic;
-}
 
 
 /*********************************** Biografia ***********************************/
 
 #curriculum {
-    padding: 3%;
+    padding: 15px;
     padding-bottom: 150px;
 }
 
@@ -345,56 +351,25 @@ a {
     padding: 15px 0px;
 }
 
-#portfolio,
-#curriculum h3 {
-    font-size: 3rem;
-    color: #fff;
-    padding-bottom: 10px;
-}
 
-#portfolio,
-#curriculum h4 {
-    font-size: 3.25rem;
-    color: #fff;
-    padding-top: 35px;
-    padding-bottom: 10px;
-}
-
-#portfolio,
-#curriculum h5 {
-    font-size: 2.25rem;
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 5;
-}
-
-#portfolio,
-#curriculum h6 {
-    font-size: 1.85rem;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-#curriculum a:hover {
-    color: rgb(249, 169, 255);
-    font-style: italic;
-}
 
 
 /*********************************** Portfolio ***********************************/
 
 #downloadportfolio {
-    padding: 20px;
+    padding: 75px 0;
 }
 
 #downloadportfolio h6:hover {
-    color: rgb(0, 255, 38);
-    font-style: italic;
+    color: var(--text-hover);
+}
+
+#seccionportfolio {
+    padding: 15px;
 }
 
 #portfolio {
-    padding: 3%;
+    padding: 15px;
 }
 
 .portfoliocajas {
@@ -403,7 +378,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 15 0px;
 }
 
 .diapos {
@@ -420,10 +395,8 @@ a {
     font-size: 3rem;
 }
 
-.proyectos,
-p {
+.proyectos p {
     padding-bottom: 15px;
-    font-size: 26px;
     font-weight: 100;
 }
 
@@ -431,7 +404,7 @@ p {
 /*********************************** Contacto ***********************************/
 
 main {
-    padding: 3%;
+    padding: 15px;    
 }
 
 form {
@@ -529,8 +502,8 @@ textarea {
 
 #boton:hover {
     cursor: pointer;
-    background-color: #00ff11;
-    font-style: italic;
+    background-color: var(--text-hover);
+    color: #fff;
 }
 
 
@@ -541,8 +514,8 @@ textarea {
 footer {
     position: relative;
     background-color: black;
-    margin: 20px 0;
-    padding: 20px 3%;
+    margin: 20px 0 0 0;
+    padding: 5px 15px;
 }
 
 footer p {
