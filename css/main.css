@@ -13,7 +13,7 @@ img {
 }
 
 body {
-    background-color:black;
+    background-color: black;
     font-family: Instrument Sans;
 
 }
@@ -23,10 +23,7 @@ a {
 }
 
 
-
-
 /********************* CABECERA *********************/
-
 
 /***** Banner *****/
 
@@ -35,12 +32,13 @@ a {
     position: relative;
     margin: 0;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     #abovethefold {
         height: 25vh;
-        }
     }
-        
+}
+
 #textocabecera {
     position: absolute;
     top: 0;
@@ -59,25 +57,26 @@ a {
 #abovethefold H1 {
     font-size: 6vw;
 }
+
 #abovethefold H2 {
     font-size: 10vw;
     color: #fff;
 }
+
 #abovethefold H2:hover {
     font-style: italic;
     color: #ffd900;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     #abovethefold H2 {
         font-size: 5rem;
     }
+
     #abovethefold H1 {
         font-size: 3rem;
     }
 }
-
-
 
 
 /***** Menú de navegación *****/
@@ -85,7 +84,7 @@ a {
 .mainheader {
     position: sticky;
     top: 0;
-    background-color:black;
+    background-color: black;
     margin-top: 0px;
     padding: 15px 0;
     border-bottom: 5px solid #fff;
@@ -98,7 +97,8 @@ a {
     flex-direction: column;
     align-items: center;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     .mainheader ul {
         flex-flow: row;
     }
@@ -109,7 +109,8 @@ a {
     display: block;
     text-align: center;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     .mainheader ul li {
         display: inline-block;
         text-align: left;
@@ -122,7 +123,8 @@ a {
     color: #ffffff;
     font-size: 1.2em;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     .mainheader ul li {
         font-size: 1.5em;
     }
@@ -132,97 +134,95 @@ a {
 .mainheader ul li a:hover {
     color: rgb(0, 255, 247);
     font-weight: 500;
-    font-style: italic;}
-
-
-
-
+    font-style: italic;
+}
 
 
 /********************* CONTENIDO *********************/
 
-#presentacion { /*NO HAY MANERA DE QUE ACEPTE LA IMAGEN DE FONDO. ME PASA SIEMPRE*/
+#presentacion {
+    /*NO HAY MANERA DE QUE ACEPTE LA IMAGEN DE FONDO. ME PASA SIEMPRE*/
 
-    background-image: url("../assets/img/Background-manos-rojo-azul.jpg");
     background-size: cover;
     background-position: center;
-    padding-top: 250px;
+    padding-top: 100px;
     padding-right: 3%;
     padding-left: 3%;
     padding-bottom: 3%;
 }
+
 #servicios h5 {
     margin-bottom: 100px;
 }
-#textopresentacion p{
+
+#textopresentacion p {
     font-size: 25px;
     color: #fff;
     line-height: 1.6em;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     #textopresentacion p {
         width: 50%;
     }
+
     #servicios h5 {
         width: 50%;
     }
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     #textopresentacion p {
         width: 33%;
     }
+
     #servicios h5 {
         width: 33%;
     }
 }
-
-
-
-
-
-
 
 
 /************** Cajas banners **************/
 
-#secciones{
+#secciones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 200px;
     gap: 15px
 }
-#presentacion p{
+
+#presentacion p {
     font-size: 25px;
     color: #fff;
 }
-#presentacion h3{
+
+#presentacion h3 {
     font-size: 3rem;
     color: #fff;
     padding-bottom: 10px;
 }
-#presentacion h4{
+
+#presentacion h4 {
     font-size: 3rem;
     color: #fff;
     padding-top: 25px;
     padding-bottom: 10px;
 }
-#presentacion h5{
+
+#presentacion h5 {
     font-size: 2.25rem;
     color: #fff;
     padding-top: 15px;
     padding-bottom: 5;
 }
-#presentacion h6{
+
+#presentacion h6 {
     font-size: 1.85rem;
     color: #fff;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-
-
-
-
 
 
 /******* Caja BIO *******/
@@ -233,12 +233,14 @@ a {
     display: inline-block;
     border: 5px solid #fff;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     #containerbio {
         width: calc(50% - 15px);
     }
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     #containerbio {
         width: calc(33% - 15px);
     }
@@ -251,6 +253,7 @@ a {
     right: 3%;
     bottom: 3%;
 }
+
 #textoscajasbio a:hover {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -266,16 +269,19 @@ a {
     display: inline-block;
     border: 5px solid #fff;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     #containerportfolio {
         width: calc(50% - 15px);
     }
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     #containerportfolio {
         width: calc(33% - 15px);
     }
 }
+
 #textoscajasportfolio {
     position: absolute;
     top: 3%;
@@ -283,6 +289,7 @@ a {
     right: 3%;
     bottom: 3%;
 }
+
 #textoscajasportfolio a:hover {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -298,16 +305,19 @@ a {
     display: inline-block;
     border: 5px solid #fff;
 }
-@media only screen and (min-width: 768px){
+
+@media only screen and (min-width: 768px) {
     #containercontacto {
         width: calc(50% - 15px);
     }
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     #containercontacto {
         width: calc(33% - 15px);
     }
 }
+
 #textoscajascontacto {
     position: absolute;
     top: 3%;
@@ -315,21 +325,12 @@ a {
     right: 3%;
     bottom: 3%;
 }
+
 #textoscajascontacto a:hover {
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*********************************** Biografia ***********************************/
@@ -344,24 +345,31 @@ a {
     padding: 15px 0px;
 }
 
-#portfolio, #curriculum h3{
+#portfolio,
+#curriculum h3 {
     font-size: 3rem;
     color: #fff;
     padding-bottom: 10px;
 }
-#portfolio, #curriculum h4{
+
+#portfolio,
+#curriculum h4 {
     font-size: 3.25rem;
     color: #fff;
     padding-top: 35px;
     padding-bottom: 10px;
 }
-#portfolio, #curriculum h5{
+
+#portfolio,
+#curriculum h5 {
     font-size: 2.25rem;
     color: #fff;
     padding-top: 15px;
     padding-bottom: 5;
 }
-#portfolio, #curriculum h6{
+
+#portfolio,
+#curriculum h6 {
     font-size: 1.85rem;
     color: #fff;
     padding-top: 10px;
@@ -372,8 +380,6 @@ a {
     color: rgb(249, 169, 255);
     font-style: italic;
 }
-
-
 
 
 /*********************************** Portfolio ***********************************/
@@ -390,6 +396,7 @@ a {
 #portfolio {
     padding: 3%;
 }
+
 .portfoliocajas {
     width: 100%;
     display: flex;
@@ -398,26 +405,27 @@ a {
     gap: 10px;
     margin-bottom: 200px;
 }
+
 .diapos {
-    width: 100%;    
+    width: 100%;
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     .diapos {
         width: calc(50% - 10px);
     }
 }
+
 #nomproyecto {
     font-size: 3rem;
 }
 
-.proyectos, p {
+.proyectos,
+p {
     padding-bottom: 15px;
     font-size: 26px;
     font-weight: 100;
 }
-
-
-
 
 
 /*********************************** Contacto ***********************************/
@@ -439,11 +447,18 @@ form {
     color: #fff;
 }
 
-textarea:focus, #worktipe:focus, input:focus{
+textarea:focus,
+#worktipe:focus,
+input:focus {
     outline: none;
 }
 
-.inputs, input#fname, select#worktipe, textarea, #emailin, #tlf {
+.inputs,
+input#fname,
+select#worktipe,
+textarea,
+#emailin,
+#tlf {
     display: block;
     width: 100%;
     background-color: #fff;
@@ -456,28 +471,47 @@ textarea:focus, #worktipe:focus, input:focus{
     border-style: none;
 }
 
-#gatetes{
+#gatetes {
     width: 100%;
 }
 
-#worktipe option{
+#worktipe option {
     padding-top: 2px;
     padding-bottom: 2px;
     color: #999;
 }
 
-#name, input#fname, #emailin, #tlf {
+#name,
+input#fname,
+#emailin,
+#tlf {
     height: 40px;
 }
-@media only screen and (min-width: 768px){
-    .inputs, input#fname, select#worktipe, textarea, #emailin, #tlf, #gatetes {
+
+@media only screen and (min-width: 768px) {
+
+    .inputs,
+    input#fname,
+    select#worktipe,
+    textarea,
+    #emailin,
+    #tlf,
+    #gatetes {
         width: 75%;
+    }
 }
-}
-@media only screen and (min-width: 1200px){
-    .inputs, input#fname, select#worktipe, textarea, #emailin, #tlf, #gatetes {
+
+@media only screen and (min-width: 1200px) {
+
+    .inputs,
+    input#fname,
+    select#worktipe,
+    textarea,
+    #emailin,
+    #tlf,
+    #gatetes {
         width: 50%;
-}
+    }
 }
 
 textarea {
@@ -485,7 +519,7 @@ textarea {
     padding-top: 5px;
 }
 
-#boton{
+#boton {
     all: unset;
     font-size: 25px;
     color: #000000;
@@ -493,32 +527,11 @@ textarea {
     background-color: #fff;
 }
 
-#boton:hover{
+#boton:hover {
     cursor: pointer;
     background-color: #00ff11;
     font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*********************************** FOOTER ***********************************/
@@ -526,15 +539,14 @@ textarea {
 
 
 footer {
+    position: relative;
     background-color: black;
+    margin: 20px 0;
     padding: 20px 3%;
 }
 
-footer p{
+footer p {
     color: #ffffff;
     font-size: 25;
     font-weight: 500;
 }
-
-
-/*********************************** FOOTER ***********************************/
